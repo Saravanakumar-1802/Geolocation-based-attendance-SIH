@@ -18,6 +18,8 @@ Future<MyData> authenticateUser(String username, String password) async {
     bool isAdmin = false;
     if (jsonResponse['admin'] is bool) {
       isAdmin = jsonResponse['admin'];
+
+      //jdjd)
     } else if (jsonResponse['admin'] is int) {
       isAdmin = jsonResponse['admin'] == 1;
     } else if (jsonResponse['admin'] is String) {
